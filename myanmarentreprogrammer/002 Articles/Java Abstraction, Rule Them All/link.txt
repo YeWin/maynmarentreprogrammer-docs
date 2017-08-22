@@ -1,0 +1,8 @@
+http://stackoverflow.com/questions/1926992/confusion-abstraction-and-encapsulation-are-the-same?noredirect=1&lq=1
+
+http://www.tonymarston.co.uk/php-mysql/abstraction.txt
+
+http://stackoverflow.com/questions/11965929/abstraction-vs-encapsulation-in-java
+
+
+http://stackoverflow.com/questions/635715/a-brilliant-example-of-effective-encapsulation-through-information-hiding/635747#635747

@@ -1,0 +1,12 @@
+Newsletters - As a blogger, I want to send out newsletters whenever a new post comes out, so that people can stay up to date with my content.
+
+Social Links - how to connect with fb, google for sharing and commenting ?
+
+Code Highlighting - how to connect git code quotes in my blog? or code snippet adding...
+
+Post Preview - I want to be able to preview posts from the filesystem, so that I can see it locally, before it gets out in the wild? (code highliting)
+
+Post Analytics - As any website owner, I want to have Google Analytics support, because I want to know if anyone's still reading my content.
+
+//As a blogger, I want to have Disqus support in place, so that people can discuss my brilliance.
+

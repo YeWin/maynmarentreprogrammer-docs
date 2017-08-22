@@ -1,0 +1,139 @@
+What kind of software developer are you? (Specialization or Generalization)?
+----------------------------------------------------------------------------
+
+thint ba wa mhar mhar lawyer ta yout nghar bu par lar? nghar bu yin thin pa hta ma sone lout phit tar ka?
+takal loe ma ngar bu yin, thin nghar phoe atwet pa hta ma sone sin sar mee tar ka bar phit ma lal?
+
+
+thin har sin sar pe thwar pe ba loe lawyer myo ko ngar phoe atwet the thwar pe so yin, kyaw taw htin tal thin thee twar tar mhan tal so tar.
+bar phit loe lal so thin har koz yat problem nat ma thet sine tat lawyer myo ko tot nghar mhar ma hote loe pal. right? 
+
+lawyer tawe mhar specilization tawe shi tal pee tot thu toe ka sa pe lout ka tal kka ba loe specilization ko pal thwar ya mal so tar thet mhat pe thar.
+mhuu khin yay yar pyit mhu tawe nat pat thet tat lawyer tawe shi tal, ma taw ta sa phit tar tawe atawet phay shin tat lawyer tawe shi tal, aein chan myay nat sine tat laywer yar tawe
+sa tha phit amyar gyi shi tal.
+
+thint anay nat kwar shin mhuu tawe lout pay tar lawyer ko nghar chin mhar ma hote bu ta kal loe thin yat problem ka tax dar mha ma hote aein chan myay nat sine tat har so yin.
+art dar kyount specilization har ayay kyi par tal. 
+
+lawyer tawer har thu toe thu toe school ka htwet lar pe tot ngr bal lawyer lout maar so tar myo sone phyat tar ma hote bu. dar pay mal ma myaw lint pal software developers tawe ka tot
+school ka htwet lar pe tot mhar bal profession line ko thwar mal so pe lout phit tar pal.
+
+
+
+Specialization is improtant
+----------------------------------------------------------------------------
+software developers taw taw myar myar ka thet thet mhat mhat lout mat specilization myoe yway htar tar ma shi kya par bu. thin art dar ko lat ma khan chin phit late mal.
+ta kat a phit mhan ka software developers taw taw myar myar ka thu toe lout tat programming language paw mu tee pe ngr ka art de mhar specialization so pee thet mhat har loe pal.
+thint anay nat lal kyar bu nay kya phit mhar par, ngr ka tot Java Developer, or ngr ka tot C# developer. ta kal tot art dar ko specilization loe pyaw tar ka ayan ko kyal par tal.
+art lo pyaw tar har thin bal loe software development myo ko lout nay tal loe pyaw tar ma hote bu. bar loe lal so tot programming language tawe ka thin har ba lo software developer myo so tar nat
+bar software tawe lout nay tal so tar ma pyaw pya pay naing bu. art dar har koz yat alout mhar lout nay tat tool ta khu pone san myo thar pyaw tar phit tal. specialization lout phoe so tar language 1 khu yway pe tar tg
+ko bal apine ko lout mhar lal so tar htet pe tot specilize pyan yway phoe loe par thay tal.
+
+
+ta khar ta lay ko ka alout akine akhwint alan tawe kyount specilization 1 khu tal ko pal yway ya mhar myo ko  soe yein nay tat tal.
+
+saw na ka lawyer tawe yat achay anay ko pyan sin sar kyi par. thin ka lawyer ta yout so par tot dar pay mat specilization ma shi tat lawyer pop.
+dar so technically aya lawyer nghar phoe shar nay tat lu tine har thint yat clients pal. dar mat pya tha nar ka lu anal ngal ka pal art loe generalist lawyer myo ko ngar phot shi tal.
+phit ng tha mya lu tawe ka specialist lawyer twae ko pal ngar mhar pal.
+
+
+Art lo so pay mat lal kyaw taw toe software developer achay anay nat pyan kyi yin generalization phit tat atwet koz yat clients tawe ka tot amyar gyi shi nay late mal, 
+dar pay mat art de amyar gyi htal ka mhar thint anay nat thu toe software yay khine phoe atwet specilization shi tal so tar ma thee tat lu myo tawe pal kyan khat late mal.
+Generalization akon lone ko kywan kywan kyin kyin lout naing yin tot akg sone par. generalization pal but speclization lout nee nee the tat tae lu myo pop. multi-specilization loe lal khaw tal.44
+
+Ta kal loe ko ka specialization ta yout so yin tot ko lout naing mat nay yar tawe nat clients tawe ka tot nal thwar late mal, but thu toe tawe atwet ko ka alout atwet po pe swal sg naing mal.
+specialization phit tat atwet alout akine nat client ya tar po lwal ku pe po pe tot tan phoe shi nay late mal.
+
+Example you are Java developer and when you find your job.
+500 Java jobs->250 Java Web development jobs->50 jobs for a specific web development stack
+ko thwar loe ya mat nay yar ka kyin thwar pe. dar pay mat ma mae par nat thin lo tar job 1 khu pal so tar. 
+sin sar kyi par art de 50jobs mhar lout phoe atwet tot thin har po thint taw tat lu ta yout pal so tar.
+
+
+
+Kind of specialties for software developers
+----------------------------------------------------------------------------
+software developers ta yout atwet yway ya mat specialties tawe ka amyar gyi shi tal, athe thar sone so language specialties tawe platform specialties tawe.
+
+pha hta ma sone thint anay nat thee ag lout ya mhar ka ko ka bal loe software development myo ko lout chin lal so tar pal. 
+
+thin har application ta khu yat frontend apine tawe nat user interface tawe yay chin tar lar?, business rule tawe nat business logic tawe par tat application ta khu yat middleware nay yar ka nay yay chin tar lar? 
+dar mha ma hote database tawe low-level operations tawe par tat application ta khu yat backend pine mhar yay chin tar lar? ayin thee ag lout ya par mal.
+thint anay nat akon lone ko yay chin loe full-stack developer pone san myo nay chin tar lar, art dar so yin tot nay yar tine ko specialize the ag kyo sar phoe tot lo par tal.
+
+thint anay nat embedded systems development specilizae sate win sar loe yway chin lal ya par tal. hardware devices tawe nat nee sat pe tot code tawe ko computer, device tawe yat atwin pine mhar run phoe yay ya mal.
+
+Opreation systems ka lal ta char speialty ta khu pal, dar pay mat web development nat tot theit pe lout sa yar ma loe bu. operating system tawe phit tat Windows, Unix, or Max tawe atwet yay tat specialize software developers
+tawe lal amyar gyi shi par tal.
+
+Mobile nat pat thet pe tot specialization nay yar kyi kyi mar mar shi par thay tal. Android developer tawe IOS developer tawe amyar gyi market mhar lo nay kya tal.
+
+kya taw thi tat speclialization areas tawe ka tot
+.Web development stack (frontend, backend, and so on)
+.Embedded systems 
+.Specific operating system
+.Mobile development
+.Framework
+.Software system
+
+koz anay nat ko lout chin tat har ko the aung lout pe sate kyite yway loe ya par tal. 
+
+
+
+What about the Polyglot programmer?
+----------------------------------------------------------------------------
+nout htet kya taw tot yway chal loe ya tat amyo asar ta khu par. ayin ka kya taw ta choe may lar thu tawe ko specialization lout phoe akyan pay phit tine amyal lo lo pyan pe complain tat tar tawe myar par tal.
+de nay yar shin shi lin lin phit aung lout phoe loe tar ka, specialization ta khu khu htar par loe pyaw tine ta char skills tawe ko thee phoe ma loe tot bu loe pyaw tar ma hote par bu.
+
+amyal lo lo 1 khu htet ma ka po pe the tat software developers tawe har kg par tal. great pop. thin har ta ka loe technologies tawe programming languages tawe amyar gyi thee naing mal so yin
+1 khu tal thar the tat software developer tawe htet po pee tan phoe shi par tal. But art loe the phoe ka tot khat khat khal khal lay lar phoe lout phoe tot lo par tal:)
+
+De nay yar mhar Polyglot programmer so tar language tawe amyar gyi thone pe ko yat project ko akung sone phit aung yay tar ko pal. 
+ou pa mhar Google ko yay htar tat language tawe ko kyi kyi yin Front-end(Javascript), Back(C,C++,Go,Java,Pythong) and so on. 
+kya naw htin tar tot javascript ko client side atwet thone pe searching nat indexing ko tot C,C++ Gmail toe bar toe ko tot Java nat yay thwar tal htin tal.
+pyaw chin tar ka ko yat project ko language tawe amyar gyi poun pe lo at tat nay yar mhar akg sone language ko thone thawr tar par.
+
+Art tot thint anay nat myar myar lay. lar naing ag lout par, pe tot flexible phit naing tha lout phit aung nay par. dar mat ko pine specilization ta khu ko lal yway htar par.
+ta char lu tawe nat shin yin kwal pyar pe tot po thar nay aung loe. ta kal loe project yay phoe language yway phoe 1 khu htet ma ka kyone lar pe so yin, koz yat specilization nat pal yay par.
+pe tot mha ta char language tawe htet phaye par project yat ta char lo art tat functionality tawe mhar. google lo myo pop.
+
+
+Note-I'm a big fan of being a Polyglot.
+
+
+What about the T-Shaped developer?
+----------------------------------------------------------------------------
+T-shaped developer mhar ko yat specialization ta khu khu ko thet mhat pe tot language ta ku ku ko yway pe kywan kyin aung nat nat nal nal thee ag lout ya mal. art dar ka T yat vertical line ko ko sar phyu mal. 
+art dar pe thawr yin ta char skills tawe amyar gyi ko lal htet pe lay lar pe nar lal yone thone tat yone lout the aung lout ya mal. art dar ka T yat horizontal line ko ko sar phyu mal.
+
+art tot koz yat specialize language ko ayin master phit thwar aung lout par pe tot mha ta char language tawe te me khout me shi aung lout par.
+
+pyaw ya yin T yat vertical line ka specialization line phit pe horizontal line ka generalization line ko so lo tar par.
+
+"A T-shaped software developer is a jack-of-all-trades, but a master of one."
+jack-of-all-trades=master of none
+
+
+ta kal loe ko ka T-shaped developer ta yout so yin language tawe amyar gyi lal te me khout me shi mal, ta ku mhar lal kywan kywan kyin kyin ya mat pone san myo phit tal.
+
+
+My Conclusion
+----------------------------------------------------------------------------
+post topic nat pat thet pe tot ka tot amyal kyar nay ya tar par.
+takar ta lay koz ko bar yway yin kg ma lal?, lout chin tar nat lout nay ya tar nat ma kite bu, ba lo lout ya ma lal so tar tawe ka,
+har dar so dar ko lout par loe aphay ta ku tal tan pay loe ma lone lout par bu. Java pal lout or C# pal lout Android pal lout loe pyaw loe ma lwal par bu.
+Art tar kyount de post ko yay like chin arr phit aku nyi phit mal loe yone kyi par tal. ta kal loe ko ka language 1 khu htal po pe lout mal loe yway chal mal so yin art dar har mhan tal mhar tal ma shi par bu.
+nout sone koz nat kaz achay nay nat pal thet sine par tal. koz sate kyite yway kwhint shi tal.
+
+
+Tacking Action
+--------------
+. software developement mhar shi tat specialities twae ko cha yay pe ko bal har ko lout chin lal so tar sin sar par. (Me: Web development stack)
+. language nat pat thet pe tot specialities ta khu yway par ta kal loe thint mhar ma shi thay bu so yin (Me: Java full-stack)
+. pe yin apaw ka pyaw htar tat ahtal ka bal lan kyoun ko thwar ma lal so tar yway par (Me: want to be
+ Polyglot programmer)
+. ko yway htar tat lan kyoun ko bar tawe pal lout phit phit koz bar ko tae mat aung htein pe pe sone aung lout (Me: still trying to become Polyglot)
+
+Note
+-----
+office pate yat lal phit arr yone lal ya nay tone moe yay phit thwar tal, asone htee phat pay tat atwet kyay zuu tin par tal. see you, take care!

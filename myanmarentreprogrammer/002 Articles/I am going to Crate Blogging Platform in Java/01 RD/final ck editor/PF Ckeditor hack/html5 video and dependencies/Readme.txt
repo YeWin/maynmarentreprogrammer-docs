@@ -1,0 +1,1 @@
+config.extraPlugins = 'html5video,widget,widgetselection,clipboard,lineutils';

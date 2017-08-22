@@ -1,0 +1,409 @@
+
+    var refEn = 0,
+    tagsInitDone = 0,
+    gptAdSlots = [],
+    adDomain = 'simpleprogrammer.com',
+    breakpoints = {"desktop":"1024","tablet":"768","mobile":"0"},
+    domainValid = 1,
+    PREBID_TIMEOUT = 2000,
+    adBlock = false,
+    interstitialDone = 0,
+    waldoTimeOuts = [],
+    waldoAdRefreshes = [],
+    allAdUnits = [],
+    blockAdsOn = [];
+    
+    function adDomainCheck() {
+        if(window.location.hostname != adDomain) {
+            console.log('Cannot display ads: Domain name mismatch');
+            return false;
+        }
+
+        if(blockAdsOn.length) {
+           var currPath = window.location.pathname;
+           currPath = (currPath.substr(-1) != '/') ? currPath + '/': currPath;
+           for(i = 0; i < blockAdsOn.length; i++) {
+                if(blockAdsOn[i] == currPath) {
+                    return false;
+                }
+           }
+        }
+        return true;
+    }
+
+    if(adDomainCheck()) {
+        var adUnitsExist = 1;
+
+        if(adUnitsExist) {
+
+            setTimeout(function() { 
+                refEn = 1;
+            }, 30000);
+
+            var adUnits = [{"code":"waldo-tag-373","customParams":{"slotNo":"373","mobile_pause":"0","refresh":{"type":"min_max","min":"60","max":"180","limit":"0"},"passback":"633"},"sizeMapping":[{"minWidth":"1024","sizes":[["300","250"],["300","600"],["160","600"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161768"}},{"bidder":"defymedia","params":{"placementId":"11605917"}},{"bidder":"appnexus","params":{"placementId":"11605892"}},{"bidder":"sekindoapn","params":{"placementId":"11493412"}},{"bidder":"sekindoUM","params":{"spaceId":"84369"}},{"bidder":"sekindoUM","params":{"spaceId":"84370"}},{"bidder":"aol","params":{"placement":"4599546","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599548","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599545","network":"11119.1"}}]},{"minWidth":"768","sizes":[["300","250"],["300","600"],["160","600"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161768"}},{"bidder":"defymedia","params":{"placementId":"11605917"}},{"bidder":"appnexus","params":{"placementId":"11605892"}},{"bidder":"sekindoapn","params":{"placementId":"11493412"}},{"bidder":"sekindoUM","params":{"spaceId":"84371"}},{"bidder":"aol","params":{"placement":"4599553","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599551","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599552","network":"11119.1"}}]},{"minWidth":"0","sizes":[["300","250"],["300","600"],["160","600"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161768"}},{"bidder":"defymedia","params":{"placementId":"11605917"}},{"bidder":"appnexus","params":{"placementId":"11605892"}},{"bidder":"sekindoapn","params":{"placementId":"11493412"}},{"bidder":"sekindoUM","params":{"spaceId":"84371"}},{"bidder":"aol","params":{"placement":"4599553","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599551","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599552","network":"11119.1"}}]}],"affiliate_banners":[]},{"code":"waldo-tag-374","customParams":{"slotNo":"374","mobile_pause":"0","refresh":{"type":"min_max","min":"70","max":"180","limit":"0"},"passback":"634"},"sizeMapping":[{"minWidth":"1024","sizes":[["300","250"],["300","600"],["160","600"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161769"}},{"bidder":"defymedia","params":{"placementId":"11605922"}},{"bidder":"appnexus","params":{"placementId":"11605896"}},{"bidder":"sekindoapn","params":{"placementId":"11493413"}},{"bidder":"sekindoUM","params":{"spaceId":"84373"}},{"bidder":"sekindoUM","params":{"spaceId":"84374"}},{"bidder":"aol","params":{"placement":"4599560","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599556","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599555","network":"11119.1"}}]},{"minWidth":"768","sizes":[["300","250"],["300","600"],["160","600"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161769"}},{"bidder":"defymedia","params":{"placementId":"11605922"}},{"bidder":"appnexus","params":{"placementId":"11605896"}},{"bidder":"sekindoapn","params":{"placementId":"11493413"}},{"bidder":"sekindoUM","params":{"spaceId":"84375"}},{"bidder":"aol","params":{"placement":"4599563","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599561","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599564","network":"11119.1"}}]},{"minWidth":"0","sizes":[["300","250"],["300","600"],["160","600"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161769"}},{"bidder":"defymedia","params":{"placementId":"11605922"}},{"bidder":"appnexus","params":{"placementId":"11605896"}},{"bidder":"sekindoapn","params":{"placementId":"11493413"}},{"bidder":"sekindoUM","params":{"spaceId":"84375"}},{"bidder":"aol","params":{"placement":"4599563","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599561","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599564","network":"11119.1"}}]}],"affiliate_banners":[]},{"code":"waldo-tag-375","customParams":{"slotNo":"375","mobile_pause":"0","refresh":{"type":"min_max","min":"70","max":"190","limit":"0"},"passback":"635"},"sizeMapping":[{"minWidth":"1024","sizes":[["300","250"],["300","600"],["160","600"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161770"}},{"bidder":"defymedia","params":{"placementId":"11605928"}},{"bidder":"appnexus","params":{"placementId":"11605910"}},{"bidder":"sekindoapn","params":{"placementId":"11493413"}},{"bidder":"sekindoUM","params":{"spaceId":"84373"}},{"bidder":"sekindoUM","params":{"spaceId":"84374"}},{"bidder":"aol","params":{"placement":"4599560","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599556","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599555","network":"11119.1"}}]},{"minWidth":"768","sizes":[["300","250"],["300","600"],["160","600"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161770"}},{"bidder":"defymedia","params":{"placementId":"11605928"}},{"bidder":"appnexus","params":{"placementId":"11605910"}},{"bidder":"sekindoapn","params":{"placementId":"11493413"}},{"bidder":"sekindoUM","params":{"spaceId":"84375"}},{"bidder":"aol","params":{"placement":"4599563","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599561","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599564","network":"11119.1"}}]},{"minWidth":"0","sizes":[["300","250"],["300","600"],["160","600"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161770"}},{"bidder":"defymedia","params":{"placementId":"11605928"}},{"bidder":"appnexus","params":{"placementId":"11605910"}},{"bidder":"sekindoapn","params":{"placementId":"11493413"}},{"bidder":"sekindoUM","params":{"spaceId":"84375"}},{"bidder":"aol","params":{"placement":"4599563","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599561","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599564","network":"11119.1"}}]}],"affiliate_banners":[]},{"code":"waldo-tag-376","customParams":{"slotNo":"376","mobile_pause":"0","refresh":{"type":"min_max","min":"70","max":"190","limit":"0"},"passback":"636"},"sizeMapping":[{"minWidth":"1024","sizes":[["728","90"],["970","90"],["970","250"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161771"}},{"bidder":"defymedia","params":{"placementId":"11605933"}},{"bidder":"appnexus","params":{"placementId":"11605902"}},{"bidder":"sekindoapn","params":{"placementId":"11493421"}},{"bidder":"sekindoUM","params":{"spaceId":"84372"}},{"bidder":"aol","params":{"placement":"4599547","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599544","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599543","network":"11119.1"}}]},{"minWidth":"768","sizes":[["320","50"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161771"}},{"bidder":"defymedia","params":{"placementId":"11605933"}},{"bidder":"appnexus","params":{"placementId":"11605902"}},{"bidder":"sekindoapn","params":{"placementId":"11493421"}},{"bidder":"aol","params":{"placement":"4599554","network":"11119.1"}}]},{"minWidth":"0","sizes":[["320","50"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161771"}},{"bidder":"defymedia","params":{"placementId":"11605933"}},{"bidder":"appnexus","params":{"placementId":"11605902"}},{"bidder":"sekindoapn","params":{"placementId":"11493421"}},{"bidder":"aol","params":{"placement":"4599554","network":"11119.1"}}]}],"affiliate_banners":[]},{"code":"waldo-tag-377","customParams":{"slotNo":"377","mobile_pause":"0","refresh":{"type":"min_max","min":"60","max":"180","limit":"0"},"passback":"637"},"sizeMapping":[{"minWidth":"1024","sizes":[["728","90"],["468","60"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161772"}},{"bidder":"defymedia","params":{"placementId":"11605936"}},{"bidder":"appnexus","params":{"placementId":"11605906"}},{"bidder":"sekindoapn","params":{"placementId":"11493421"}},{"bidder":"sekindoUM","params":{"spaceId":"84372"}},{"bidder":"aol","params":{"placement":"4599547","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599544","network":"11119.1"}},{"bidder":"aol","params":{"placement":"4599543","network":"11119.1"}}]},{"minWidth":"768","sizes":[["468","60"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161772"}},{"bidder":"defymedia","params":{"placementId":"11605936"}},{"bidder":"appnexus","params":{"placementId":"11605906"}},{"bidder":"sekindoapn","params":{"placementId":"11493421"}},{"bidder":"aol","params":{"placement":"4599554","network":"11119.1"}}]},{"minWidth":"0","sizes":[["468","60"]],"bids":[{"bidder":"districtmDMX","params":{"id":"161772"}},{"bidder":"defymedia","params":{"placementId":"11605936"}},{"bidder":"appnexus","params":{"placementId":"11605906"}},{"bidder":"sekindoapn","params":{"placementId":"11493421"}},{"bidder":"aol","params":{"placement":"4599554","network":"11119.1"}}]}],"affiliate_banners":[]}];
+            var passbackAdUnits = [{"code":"waldo-tag-633","customParams":{"slotNo":"633","mobile_pause":"0","refresh":{"type":"min_max","min":"60","max":"180","limit":"0"}}},{"code":"waldo-tag-634","customParams":{"slotNo":"634","mobile_pause":"0","refresh":{"type":"min_max","min":"70","max":"180","limit":"0"}}},{"code":"waldo-tag-635","customParams":{"slotNo":"635","mobile_pause":"0","refresh":{"type":"min_max","min":"70","max":"190","limit":"0"}}},{"code":"waldo-tag-636","customParams":{"slotNo":"636","mobile_pause":"0","refresh":{"type":"min_max","min":"70","max":"190","limit":"0"}}},{"code":"waldo-tag-637","customParams":{"slotNo":"637","mobile_pause":"0","refresh":{"type":"min_max","min":"60","max":"180","limit":"0"}}}];
+            allAdUnits = adUnits.concat(passbackAdUnits);
+
+            var browserWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            
+            adUnits.forEach(function (adUnit) {
+                if(!adUnit.bids) {
+                    var responsiveBids = adUnit.sizeMapping.find(function(sizeMapping) {
+                        if(browserWidth > 0) {
+                            return browserWidth >= sizeMapping.minWidth;
+                        }
+                        else {
+                            return sizeMapping.minWidth == 0;
+                        }
+                    }).bids;
+                    adUnit.bids = responsiveBids;
+                }
+            });
+            
+                        var affiliateBanners;
+            
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+            googletag.cmd.push(function() {
+                googletag.pubads().disableInitialLoad();
+                googletag.pubads().collapseEmptyDivs(true);
+            });
+
+            var pbjs = pbjs || {};
+            pbjs.que = pbjs.que || [];
+
+            (function() {
+                waldoInitScripts();
+            })();
+
+            pbjs.que.push(function() {
+                pbjs.enableAnalytics({
+                    provider: 'roxot',
+                    options: {
+                        publisherIds: ["6af1affa-a195-46fe-b530-d923ee08a186"]
+                    }
+                });
+                pbjs.addAdUnits(adUnits);
+                
+                pbjs.bidderSettings = {
+                    springserve: {
+                        bidCpmAdjustment : function(bidCpm, bid){
+                            return bidCpm * 0.70;
+                        }
+                    },
+                    sekindoapn: {
+                        bidCpmAdjustment : function(bidCpm, bid){
+                            return bidCpm * 0.75;
+                        }
+                    }
+                };
+
+                pbjs.requestBids({
+                    bidsBackHandler: sendAdserverRequest
+                });
+            });
+
+            function sendAdserverRequest(response) {
+                if (pbjs.adserverRequestSent) return;
+                pbjs.adserverRequestSent = true;
+                googletag.cmd.push(function() {
+                    //initialize all tag features (refresh, etc)
+                    waldoInitTags(adUnits);
+                    pbjs.que.push(function() {
+                        pbjs.setTargetingForGPTAsync();
+                        googletag.pubads().refresh();
+                    });
+                });
+            }
+
+            setTimeout(function() {
+                sendAdserverRequest();
+            }, PREBID_TIMEOUT);
+
+             function waldoInitScripts() {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+
+                var css = '';
+                css += '.waldo-sticky-footer{position: fixed; width: 100%; bottom: 0px; left: 0px; text-align: center; z-index: 500;}';
+                css += '.waldo-sticky-sidebar{position: fixed; width: 100%; top: 10px;z-index: 90}';
+                css += '.waldo-overlay{position: fixed;height: 100%;width: 100%;top: 0;left: 0;z-index: 105;background: rgba(0,0,0,0.7);}';
+                css += '#waldo-counter {position: absolute;bottom: 0;right: 0;color: #fff;font-size: 30px;padding: 15px;}';
+                if(browserWidth >= breakpoints.desktop) {
+                    css += '.waldo-bfleft {position: fixed; left: 0; top: 10px;z-index:101;}';
+                    css += '.waldo-bfright {position: fixed; right: 0; top: 10px;z-index:101;}';
+                }
+
+                style.appendChild(document.createTextNode(css));
+                var styleTarget = document.getElementsByTagName('head')[0];
+                styleTarget.appendChild(style);
+
+                var gads = document.createElement('script');
+                gads.async = true;
+                gads.type = 'text/javascript';
+                var useSSL = 'https:' == document.location.protocol;
+                gads.src = (useSSL ? 'https:' : 'http:') +
+                    '//www.googletagservices.com/tag/js/gpt.js';
+                var node = document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(gads, node);
+
+                var dfpEl = document.createElement('script');
+                dfpEl.type = 'text/javascript';
+                dfpEl.text = "googletag.cmd.push(function() {";
+                                dfpEl.text += "gptAdSlots[373] = googletag.defineSlot('/13326244/simpleprogrammer_300x250FL_1', ['fluid'], 'waldo-tag-373').defineSizeMapping(googletag.sizeMapping().addSize([1024, 0], [[300, 250], [300, 600], [160, 600]]).addSize([768, 0], [[300, 250], [300, 600], [160, 600]]).addSize([0, 0], [[300, 250], [300, 600], [160, 600]]).build()).addService(googletag.pubads());";
+                                dfpEl.text += "gptAdSlots[633] = googletag.defineSlot('/124067137/simpleprogrammer_300x250FL_1_Passback_595f9d83b748c', [300, 250], 'waldo-tag-633').addService(googletag.pubads());";
+                                dfpEl.text += "gptAdSlots[374] = googletag.defineSlot('/13326244/simpleprogrammer_300x250FL_2', ['fluid'], 'waldo-tag-374').defineSizeMapping(googletag.sizeMapping().addSize([1024, 0], [[300, 250], [300, 600], [160, 600]]).addSize([768, 0], [[300, 250], [300, 600], [160, 600]]).addSize([0, 0], [[300, 250], [300, 600], [160, 600]]).build()).addService(googletag.pubads());";
+                                dfpEl.text += "gptAdSlots[634] = googletag.defineSlot('/124067137/simpleprogrammer_300x250FL_2_Passback_595f9d86c38cb', [160, 600], 'waldo-tag-634').addService(googletag.pubads());";
+                                dfpEl.text += "gptAdSlots[375] = googletag.defineSlot('/13326244/simpleprogrammer_300x250FL_3', ['fluid'], 'waldo-tag-375').defineSizeMapping(googletag.sizeMapping().addSize([1024, 0], [[300, 250], [300, 600], [160, 600]]).addSize([768, 0], [[300, 250], [300, 600], [160, 600]]).addSize([0, 0], [[300, 250], [300, 600], [160, 600]]).build()).addService(googletag.pubads());";
+                                dfpEl.text += "gptAdSlots[635] = googletag.defineSlot('/124067137/simpleprogrammer_300x250FL_3_Passback_595f9d89bb369', [300, 600], 'waldo-tag-635').addService(googletag.pubads());";
+                                dfpEl.text += "gptAdSlots[376] = googletag.defineSlot('/13326244/_simpleprogrammer_728x90FL_1', ['fluid'], 'waldo-tag-376').defineSizeMapping(googletag.sizeMapping().addSize([1024, 0], [[728, 90], [970, 90], [970, 250]]).addSize([768, 0], [[320, 50]]).addSize([0, 0], [[320, 50]]).build()).addService(googletag.pubads());";
+                                dfpEl.text += "gptAdSlots[636] = googletag.defineSlot('/124067137/simpleprogrammer_728x90FL_1_Passback_595f9d8ce6fc4', [728, 90], 'waldo-tag-636').addService(googletag.pubads());";
+                                dfpEl.text += "gptAdSlots[377] = googletag.defineSlot('/13326244/_simpleprogrammer_728x90FS_1', ['fluid'], 'waldo-tag-377').defineSizeMapping(googletag.sizeMapping().addSize([1024, 0], [[728, 90], [468, 60]]).addSize([768, 0], [[468, 60]]).addSize([0, 0], [[468, 60]]).build()).addService(googletag.pubads());";
+                                dfpEl.text += "gptAdSlots[637] = googletag.defineSlot('/124067137/simpleprogrammer_728x90FS_1_Passback_595f9d8fe68f8', [728, 90], 'waldo-tag-637').addService(googletag.pubads());";
+                                dfpEl.text += "googletag.pubads().enableSingleRequest();";
+                dfpEl.text += "googletag.enableServices();";
+                dfpEl.text += "googletag.pubads().addEventListener('impressionViewable', function(event) {hb_refresh(event); hb_sroll_pause(event);});"
+                dfpEl.text += "googletag.pubads().addEventListener('slotRenderEnded', function(event) {waldoInterstitialInit(event);waldoPassbackInit(event)});"; 
+                dfpEl.text += "});";
+                var dfpElTarget = document.getElementsByTagName('head')[0];
+                dfpElTarget.appendChild(dfpEl);
+
+                var pbjsEl = document.createElement('script');
+                pbjsEl.type = 'text/javascript';
+                pbjsEl.async = true;
+                pbjsEl.src = 'https://d31vxm9ubutrmw.cloudfront.net/sites/all/modules/custom/ad_delivery/prebid.js';
+                var pbjsTargetEl = document.getElementsByTagName('head')[0];
+                pbjsTargetEl.insertBefore(pbjsEl, pbjsTargetEl.firstChild);
+
+                var adBlock = document.createElement('script');
+                adBlock.type = 'text/javascript';
+                adBlock.async = true;
+                adBlock.src = 'https://d31vxm9ubutrmw.cloudfront.net/sites/all/modules/custom/ad_delivery/adblock.js';
+                var adBlockTarget = document.getElementsByTagName('head')[0];
+                adBlockTarget.insertBefore(adBlock, adBlockTarget.firstChild);                
+            }
+
+            function hb_sroll_pause(event) {
+                for(var i = 0, len = allAdUnits.length; i < len; i++) {
+                    if(event.slot.getSlotElementId() == allAdUnits[i].code 
+                        && allAdUnits[i].customParams.mobile_pause > 0
+                        && browserWidth < breakpoints.tablet) {
+
+                        document.documentElement.style.overflow = 'hidden';
+                        document.body.style.overflow = 'hidden';
+                       
+                        (function(i) {
+                            setTimeout(function(){
+                                document.documentElement.style.overflow = '';
+                                document.body.style.overflow = '';
+                            }, allAdUnits[i].customParams.mobile_pause * 1000);
+                        })(i);
+                    }
+                }
+            }
+
+            function hb_refresh(event) {
+                if(!refEn) return false;
+                for(var i = 0, len = adUnits.length; i < len; i++) {
+                    if(event.slot.getSlotElementId() == allAdUnits[i].code && allAdUnits[i].customParams.refresh.type == 'viewability') {
+                        (function(i) {
+                            setTimeout(function(){hbRefreshBid(allAdUnits[i])}, allAdUnits[i].customParams.refresh.seconds * 1000);
+                        })(i);
+                    }
+                }
+            }
+
+            function waldoPassbackInit(event) {
+                for(var i = 0, len = adUnits.length; i < len; i++) {
+                    if(event.slot.getSlotElementId() == adUnits[i].code && adUnits[i].customParams.passback) {
+                        var passbackId = adUnits[i].customParams.passback;
+                        var checkPassbackDiv = document.getElementById('waldo-tag-' + adUnits[i].customParams.passback);
+
+                        if(event.isEmpty) {
+                            if(!checkPassbackDiv) {
+                                var tagDiv = document.getElementById(event.slot.getSlotElementId());
+                                var passback = waldoLoadPassback(adUnits[i].customParams.passback);
+                                var passbackDiv = document.createElement('div');
+                                passbackDiv.setAttribute('id', passback.code);
+                                tagDiv.parentNode.insertBefore(passbackDiv, tagDiv);
+                                waldoInitTags([passback]);
+                                googletag.pubads().refresh([gptAdSlots[adUnits[i].customParams.passback]]);
+                            }
+                        }
+                        else if(checkPassbackDiv) {
+                            if(waldoTimeOuts[passbackId]) {
+                                clearTimeout(waldoTimeOuts[passbackId]);
+                            }
+                            var el = document.getElementById('waldo-tag-' + adUnits[i].customParams.passback);
+                            el.parentNode.removeChild(el);
+                        }
+                    }
+                }
+            }
+
+            function waldoInterstitialInit(event) {
+                if(interstitialDone) return false;
+            
+                for(var i = 0, len = adUnits.length; i < len; i++) {
+                    if(event.slot.getSlotElementId() == adUnits[i].code && adUnits[i].customParams.interstitial) {
+                        interstitialDone = 1;
+                        
+                        var bidDiv = document.getElementById(adUnits[i].code);
+                        if(browserWidth >= breakpoints.desktop && !event.isEmpty) {
+                            var interstitialDuration = adUnits[i].customParams.interstitial_duration;
+                            var counter = document.createElement('div');
+                            counter.setAttribute('id', 'waldo-counter');
+                            counter.innerHTML = 'Ad will close in <span class="count">' + interstitialDuration + '</span> seconds';
+                            bidDiv.appendChild(counter);
+                            bidDiv.className = 'waldo-overlay';
+                            bidDiv.style.display = 'block';
+                            var iframe = bidDiv.getElementsByTagName('iframe')[0];
+                            var innerDiv = bidDiv.getElementsByTagName('div')[0];
+                            innerDiv.style.left = '50%';
+                            innerDiv.style.top = '50%';
+                            innerDiv.style.position = 'absolute';
+                            innerDiv.style.width = iframe.clientWidth + 'px';
+                            innerDiv.style.height = iframe.clientHeight + 'px';
+                            innerDiv.style.marginLeft = '-' + (parseInt(iframe.clientWidth) / 2) + 'px';
+                            innerDiv.style.marginTop = '-' + (parseInt(iframe.clientHeight) / 2) + 'px';
+
+                            //set counter
+                            var interstitialCounter = setInterval(function(){
+                                var countDown = interstitialDuration--;
+                                counter.getElementsByTagName('span')[0].innerHTML = countDown;
+                                if(countDown == 0) {
+                                    clearInterval(interstitialCounter);
+                                    bidDiv.parentNode.removeChild(bidDiv);
+                                }
+                            }, 1000);
+                        }
+                    }
+                }       
+            }
+
+            function waldoInitTags(tagsToInit) {
+                var scrollingAdUnit;
+
+                if(typeof canRunAds === 'undefined') {
+                    adBlock = true;
+                }
+
+                docBody = document.documentElement || document.body.parentNode || document.body;
+
+                for(index = 0; index < tagsToInit.length; ++index) {
+                    var adUnit = tagsToInit[index];
+                 
+                    //if(!tagsToInit[index].processed) {
+                        var bidDivId = adUnit.code;
+                        var bidDiv = document.getElementById(bidDivId);
+                        if(bidDiv) {
+                            tagsToInit[index].processed = 1;
+                            //init refresh counts
+                            waldoAdRefreshes[adUnit.customParams.slotNo] = 0;
+
+                            if(adUnit.customParams.sticky_sidebar && browserWidth >= breakpoints.desktop) {
+                                scrollingAdUnit = bidDiv;
+                            }
+
+                            if(adUnit.customParams.sticky_footer) {
+                                bidDiv.className = 'waldo-sticky-footer';
+                            }
+                            else if(adUnit.customParams.sticky_left || adUnit.customParams.sticky_right) {
+                                if(browserWidth >= breakpoints.desktop) {
+                                    if(adUnit.customParams.sticky_left) {
+                                        bidDiv.className = 'waldo-bfleft';
+                                    }
+                                    else {
+                                        bidDiv.className = 'waldo-bfright';
+                                    }
+                                }
+                                else {
+                                    bidDiv.style.display = 'none';
+                                }
+                            }
+                            else if(adUnit.customParams.interstitial) {
+                                //hide until the ad is rendered
+                                bidDiv.style.display = 'none';
+                            }
+
+                            if(adBlock) {
+                                var affiliates = adUnit.affiliate_banners;
+
+                                if(affiliates.length > 0 && typeof affiliateBanners !== 'undefined') {
+                                    //select random banner
+                                    var affiliate = affiliates[Math.floor(Math.random() * affiliates.length)];
+                                    bidDiv.innerHTML = affiliateBanners[affiliate].banner_html;
+                                }
+                            }
+                            else {
+                                if(adUnit.customParams.refresh.type == 'min_max') {
+                                    hbRandomMinMaxRefresh(tagsToInit[index]);
+                                }
+                            }
+                        }
+       
+                        if(scrollingAdUnit) {
+                            var scrollingAdUnitTop = scrollingAdUnit.offsetTop,
+                            hasOffset = window.pageYOffset !== undefined,
+                            scrollTop;
+
+                            window.onscroll = function (e) {
+                                scrollTop = hasOffset ? window.pageYOffset : docBody.scrollTop;
+                                if(scrollTop >= scrollingAdUnitTop) {
+                                    scrollingAdUnit.className = 'waldo-sticky-sidebar';
+                                } 
+                                else {
+                                   scrollingAdUnit.className = '';
+                                }
+                            } 
+                        }
+                    //}
+                }
+            }
+
+            function hbRefreshBid(adUnit) {
+                pbjs.que.push(function() {
+                    pbjs.requestBids({
+                        timeout: PREBID_TIMEOUT,
+                        adUnitCodes: [adUnit.code],
+                        bidsBackHandler: function(response) {
+                            pbjs.setTargetingForGPTAsync([adUnit.code]);
+                            googletag.pubads().refresh([gptAdSlots[adUnit.customParams.slotNo]]); 
+                        }
+                    });
+                });
+            }
+
+            function hbRandomMinMaxRefresh(adUnit) {
+                var slotNo = adUnit.customParams.slotNo;
+                var min = parseInt(adUnit.customParams.refresh.min),
+                max = parseInt(adUnit.customParams.refresh.max),
+                limit = parseInt(adUnit.customParams.refresh.limit);
+                var randomNo = getRandomNumber(min, max);
+
+                waldoTimeOuts[slotNo] = setTimeout(function() {
+                    hbRefreshBid(adUnit);
+                    if(waldoAdRefreshes[slotNo]) {
+                        waldoAdRefreshes[slotNo]++;
+                    }
+                    else {
+                        waldoAdRefreshes[slotNo] = 1;
+                    }
+
+                    if(waldoAdRefreshes[slotNo] != limit) {
+                        hbRandomMinMaxRefresh(adUnit);
+                    }
+                }, randomNo * 1000);
+            }
+
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            }
+
+            function waldoLoadPassback(passbackSlotNo) {
+                for(i = 0; i < passbackAdUnits.length; i++) {
+                    if(passbackAdUnits[i].customParams.slotNo == passbackSlotNo) return passbackAdUnits[i];
+                }
+            }
+        }
+    }

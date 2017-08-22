@@ -1,0 +1,1 @@
+config.extraPlugins = 'image2,widget,widgetselection,clipboard,lineutils';

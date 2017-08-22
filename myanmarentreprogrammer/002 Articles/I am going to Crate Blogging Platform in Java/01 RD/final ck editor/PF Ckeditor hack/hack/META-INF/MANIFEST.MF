@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Implementation-Title: resources-ckeditor
+Bundle-Description: PrimeFaces Extensions CKEditor Resources
+X-Compile-Target: 1.6
+Bundle-SymbolicName: org.primefaces.extensions.resources.ckeditor
+Implementation-Version: 6.1.0
+Built-By: elefkof
+Bundle-ManifestVersion: 2
+Specification-Title: resources-ckeditor
+Implementation-Vendor-Id: org.primefaces.extensions
+Bundle-Name: primefaces.extensions.resources.ckeditor
+Created-By: PrimeFaces Extensions
+Build-Jdk: 1.8.0_111
+Specification-Version: 6.1
+Implementation-URL: https://github.com/primefaces-extensions/resources
+ -ckeditor
+X-Compile-Source: 1.6
+

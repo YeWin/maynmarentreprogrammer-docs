@@ -1,0 +1,16 @@
+-JUnit // finished
+-TDD (uncle bob code, books) // doing
+-Groovy // decided to not use
+-spockframework // decided to not use 
+-SpringBoot // finished
+-SpringSocial - > Disqus alone can connect to fb, g+ and so on.
+-Ckeditor or CodeMirror or gists from github // finished (gists)
+-google analytics
+-design // finished
+-logic // almost finished
+
+-SpringBoot Test  // finished
+-Mybatis Generator // finished
+-Exception // finished
+-Loggin 
+-Complete CRUD // finished

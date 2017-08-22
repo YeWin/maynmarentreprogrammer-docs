@@ -1,0 +1,34 @@
+Schindler's List
+
+OCA Oracle Database 11g SQL Fundamentals I Exam Guide
+
+
+Clean Code
+This is another one of those books that completely changed the way I wrote code. I can neatly divide my programming career into pre-Code Complete, pre-Clean Code and after. I recommend this book after reading Code Complete, because while Code Complete deals more with the structure of individual lines of code and methods, Clean Code deals with some of the same concepts, but at a slightly higher level.
+
+It’s pretty difficult to read this book and not become a better programmer.
+
+
+Effective Java
+If you have a proper understanding of core concepts of java language, I strongly suggest you read the book.
+
+
+Well-Grounded Java Developer
+-The Well-Grounded Java Developer starts with thorough coverage of Java 7 features like try-with-resources and NIO.2. 
+You'll then explore a cross-section of emerging JVM-based languages, including Groovy, Scala, and Clojure. You will find clear 
+examples that are practical and that help you dig into dozens of valuable development techniques showcasing modern approaches to
+ the dev process, concurrency, performance, and much more.
+
+
+Soft Skills: The Software Developer’s Life Manual
+Yes, this is my book. I mentioned it before, but I wanted to include it in its proper place as well. 
+In this book I cover everything non-technical that a programmer could possibly be interested in, 
+from career, to personal branding, blogging, learning, teaching, being productive, finances and even a bit on fitness and relationships.
+
+
+
+Java7 1-2
+
+
+
+Oracle

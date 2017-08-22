@@ -1,0 +1,20 @@
+blog:
+  name: Test Blog
+  description: What we test, we believe.
+  url: http://localhost:8080
+
+git:
+  repository: https://github.com/tidyjava/blogging-platform-test-contents.git
+
+analytics:
+  enabled: true
+  trackingCode: 123
+
+disqus:
+  enabled: true
+  name: disqus-test
+
+social:
+  links:
+    - name: RSS
+      url: http://localhost:8080/rss

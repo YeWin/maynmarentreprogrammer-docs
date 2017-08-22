@@ -1,0 +1,110 @@
+https://dzone.com/articles/creating-a-blogging-platform-in-java-part-1-1
+https://dzone.com/articles/creating-a-blogging-platform-in-java-2
+https://dzone.com/articles/blogging-platform-in-java-3
+
+
+http://pebble.sourceforge.net/
+-Pebble
+-Google Support Engine
+
+-Apache Roller
+
+http://java-source.net/open-source/bloggers
+
+
+https://dzone.com/articles/creating-a-blogging-platform-in-java-part-1-1
+
+http://1stwebdesigner.com/best-wysiwyg-html-editor/
+http://docs.ckeditor.com/#!/guide/dev_example_setups
+
+https://github.com/primefaces-extensions/primefaces-extensions.github.com/wiki/Getting-Started
+http://kb4dev.com/tutorial/jsf-and-ckeditor/jsf-2.x--ckeditor-integration-guide
+https://www.primefaces.org/showcase-ext/sections/ckEditor/basicUsage.jsf
+http://ckeditor.com/apps/ckeditor/4.4.0/samples/plugins/codesnippet/codesnippet.html
+https://github.com/primefaces-extensions/showcase/blob/master/src/main/webapp/sections/ckEditor/example-multipleEditors.xhtml
+
+https://forum.primefaces.org/viewtopic.php?f=14&t=31915
+
+
+https://start.spring.io/
+
+Tidy Java
+=========
+https://guides.github.com/activities/hello-world/
+https://github.com/tidyjava/blogging-platform
+
+Primefaces Extensions Change logs
+=================================
+https://github.com/primefaces-extensions/resources-ckeditor/blob/master/src/main/resources/META-INF/resources/primefaces-extensions/ckeditor/CHANGES.md
+
+Google Analytics
+===============
+https://support.google.com/analytics/answer/1008015?hl=en
+
+Maven or Gradle?
+===============
+https://dzone.com/articles/maven-vs-gradle-one-year-later
+http://www.vogella.com/tutorials/EclipseGradle/article.html
+
+
+Spring Boot
+===========
+https://dzone.com/articles/why-springboot
+https://dzone.com/articles/how-springboot-autoconfiguration-magic-works
+http://projects.spring.io/spring-social/   --> Spring Social (can use for social links)
+
+Free Marker + Spring MVC
+========================
+http://viralpatel.net/blogs/spring-mvc-freemarker-ftl-example/
+
+Travis CI  (Test and Deploy with Confidence)
+=========
+https://travis-ci.org/
+
+
+TDD
+===
+https://dzone.com/articles/introduction-to-java-tdd
+https://dzone.com/articles/introduction-in-java-tdd-part-2
+https://technologyconversations.com/2013/12/20/test-driven-development-tdd-example-walkthrough/
+https://technologyconversations.com/2013/12/24/test-driven-development-tdd-best-practices-using-java-examples-2/
+
+https://dzone.com/articles/creating-a-blogging-platform-in-java-2
+
+
+Spock
+=====
+http://spockframework.org/
+
+
+Gists (Code Snippet used by simpleprogrammer.com)
+=================================================
+https://gist.github.com/
+https://help.github.com/articles/about-gists/
+http://stackoverflow.com/questions/6767518/what-is-the-difference-between-github-and-gist
+http://stackoverflow.com/questions/2082723/how-do-you-manage-your-gists-on-github
+
+
+Git Workflows
+=============
+https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow
+http://nvie.com/posts/a-successful-git-branching-model/
+
+
+Disqus
+====
+http://stackoverflow.com/questions/25810550/disqus-wont-load-in-localhost-already-in-development-mode
+http://kenhirakawa.com/load-disqus-on-localhost/
+
+Spring MVC or SpringBoot?
+==========================
+http://stackoverflow.com/questions/29479814/spring-mvc-or-spring-boot
+
+
+Ref for what is msp?
+====================
+https://www.new2code.com/home/
+
+Youtue video thumbnails
+=======================
+https://support.google.com/youtube/answer/72431?hl=en

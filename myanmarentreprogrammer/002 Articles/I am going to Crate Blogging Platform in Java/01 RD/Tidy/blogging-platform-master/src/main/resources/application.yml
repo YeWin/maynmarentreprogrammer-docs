@@ -1,0 +1,22 @@
+blog:
+  name: Tidy Blog
+  description: What we think, we become.
+  url: http://localhost:8080
+
+git:
+  repository: https://github.com/tidyjava/blogging-platform-test-contents.git
+
+analytics:
+  enabled: true
+  trackingCode: 123
+
+disqus:
+  enabled: true
+  name: YeWin
+
+social:
+  links:
+    - name: RSS
+      url: http://localhost:8080/rss
+    - name: GitHub
+      url: http://github.com/YeWin

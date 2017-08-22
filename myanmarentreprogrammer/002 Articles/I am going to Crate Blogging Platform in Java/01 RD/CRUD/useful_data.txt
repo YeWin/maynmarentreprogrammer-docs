@@ -1,0 +1,10 @@
+--args --disable-web-security
+--args --disable-xss-auditor
+https://youtu.be/AkxP16P1dZI
+<script src="https://gist.github.com/YeWin/f906ab9eb22a1af06a8c4549cafc9a33.js"></script>
+https://github.com/YeWin/msp-research/blob/master/ext%20(1).jpg?raw=true
+
+CKEDITOR.replace( 'editor1', {
+				extraPlugins: 'sourcedialog',
+				removePlugins: 'sourcearea'
+			}).config.allowedContent = true;

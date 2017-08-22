@@ -1,0 +1,20 @@
+blog:
+  name: Tidy Blog
+  description: What we think, we become.
+  url: http://localhost:8080
+
+git:
+  repository: https://github.com/tidyjava/blogging-platform-hello-world.git
+
+analytics:
+  enabled: false
+  trackingCode:
+
+disqus:
+  enabled: false
+  name:
+
+social:
+  links:
+    - name: RSS
+      url: http://localhost:8080/rss

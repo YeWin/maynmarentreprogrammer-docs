@@ -1,0 +1,36 @@
+/*
+Theme Name: Performag Child
+Theme URI: http://theme.co/x/
+Template: performag
+Author: Themeco
+Author URI: http://theme.co/
+Description: Make all of your modifications to the light version of Integrity in this child theme.
+Version: 1.0.0.1430523030
+Updated: 2015-05-01 19:30:30
+*/
+
+@charset "UTF-8";
+
+.search-results .mryv .cata {
+    margin-bottom: 20px;
+    font-size: .5rem;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.search-results .cata h2 {
+    color: #aaa;
+}
+
+.search-results .cnt { margin-top: 20px; }
+
+.search-results .mry .fwit { 
+  margin-top: 0;
+  margin-left: 0; 
+  margin-bottom: 0;
+}
+
+.search-results .entry-title {
+  margin-top: 20px;
+}

@@ -1,0 +1,142 @@
+What Software Developers Need to Know About DevOps
+--------------------------------------------------
+
+Software ta khu ko sa pe develop lout tat achain ka nay release lout tar har amyal lo lo code gyi pal yay nay tar htet po par tal.
+
+Myar thaw arr phit Software amyar su har data tawe thein see phoe data storage tawe loe par tal, pee tot thu toe ko built lout ya mal, 
+testing lout ya mal, ta nay yar yar mhar deployed lout phoe lo par mal.
+
+Thin the mal htin tal kyaw taw toe tawe, Company tawe har art dar tawe ko kine twal pe lout naing mal lu tawe lo nay tar.
+
+Art dar kyount moe DBAs (database administrator) tawe DevOps roles tawe ka shi lar tar par. (de akhout mar tot DevOps nat pat that pe pal yay thwar par mal)
+
+Thint anay nat art dar tawe akon lone ko thee sa yar loe lo lar (DevOps sofware developers ta yout the ya mat har tawe section mar kyi par), 
+code kyi pal yay nay loe ma ya bu lar loe may sayar phit nay par late mal. Hope par tal kyaw taw toe shi mar code mha code pal yay chin tat lu tawe
+Java mha Java pal yay chin tat lu tawe shi khat bu tal, akhu lal shi tone par.
+
+Aphay ka ya par tal code kyi pal yay nay loe, Java gyi pal lout nay loe, dar pay mat akhu nout pine nhit tawe mar Company tawe, team tawe taw taw myar myar har
+1 khu lout yat tat pone san myo ma hote tal bat ko ouu tee thwar nay kya pe. so lo tar ka koz anay nat language myo sone lout chin lout ya mal, Software 1 khu 
+arr lone pe p Production site ko yout thwar tat ahtee loe tat nay yar tine mhar win lout ya mal. Art dar kyount coding gyi pal yay nay mal so tat lu myo ma hote tat
+Software Developers tawe po pe lo lar tar par, anal sone tot contribute lout naing pe kyeint tat roles ma so kyo sar pe lout naing mat lu myo tawe pop.
+
+Bar pal phit phit, Software Devlopers ta yout anay nat ba loe roles myo ma so lout phoe amay khan ya mhar par, ahtoo tha phit DBA or operations team
+thee thant ma shi tat nay yar tawe loe myo mhar so yin pop.  Koz anay nat application code ta khu lone gyi yat process ko sone pyat pay phoe,
+built lout pe, test lout phoe pe tot production server mhar deploy lout phoe amay khan ya mhar par. 
+//Dar mha ma hote DBAs or DevOps aphit nat lout pay phoe amay khan ya mal.
+
+Anyway, de lo akyount ayar tawe nat pat thet pe tot koz anay nat ko nat thet sine tat technologies tawe ko amayl lay lar ying po kg mal.
+
+
+DevOps: A New Role
+------------------
+IT fiels htal mhar role athit anay nat htet htwet tar shar par tal, taw taw myar role tawe ka shi pe thar tawe.
+DevOps yat role ka tot nal nal ta char role tawe nat ma tu tha loe, nal nal lal kyal tal, kyaw taw toe thu. role ko thay thay char char thet mhat htar tar tg ma shi bu pyaw loe ya tal.
+
+Dar so DevOps yat atee akya ka bar lal?
+
+DevOps so tar Software ta khu mhar shi tat development and operations tawe mhar lout ya mat ayar tawe mhar tha mya ko pyaw tar par. 
+
+Art dar ko ta char shi mar may phit yin lal aphay tawe amyar gyi ya late mal, dar pay mal DevOps nat pat thet pe koz anay nat yaw akon
+e lone atuu tu lat khan htar ya mhar ka DevOps so tar akon lone ko lout pay ya mal bar tawe akon lout pay ya ma lal so tot kyaw taw pyaw khat tat code butilt tawe testing tawe deployed tawe nat
+production site mhar kg kg run nay phoe tawe phit tal.
+
+
+
+Operations: How We Used to Do It
+--------------------------------
+DevOps ma tine khin ka kyaw taw toe shi mar shi kya tar ka developers tawe shi mal operations tawe shi mal, takhar ta lay thu. ko IT loe lal khaw tal.
+
+Developers tawe ka code yay mal pe yin QA poe mal, QA poe ya mat lu shi dar mhar ma hote QA team se.
+
+QA ka confirm mal asin ma pyay tar tawe pyaw pe pyan poe mal. 
+
+Develpers tawe pyan pyin mal pe yin thu toe bar thu toe testing pyan lout mal dar mha ma hote operations team ka nay testing lout pay mal Production ko ma pe mhe.
+
+Operations team ka complain lout mal code yay tar standard ma kya tar tawe, server ko ba loe htee khite mar tawe security tawe bal loe htee mar tawe pyaw pe Developers tawe shi pyan poe mal.
+
+Developers atwe ka operations lout tat lu ko amyin ma kyi phit mal nal nal par par code changes lout pe pyan poe mal.
+
+Nout sone tot Production ko pe mat tar won shi tat lu ka final code u mal, server mhar deploy lout mal pe tot production ko poe mal.
+
+Production site mar asin pyay kg pyay ng tal dar ma ma hote myar thaw arr phit akon asin ma pyay phit mal, fail phit mal ta yout nat ta yout ta team nat ta team apyit lout kya mal.
+
+Art tot de section mhar ade ka kyaw taw so lo chin tar ka Softawe ta khu ko development ka nay sa pe nout sone Production yout twra tat achain htee kyar htal lout ya mal ayar tawe arr lone ko
+kyaw taw toe ka ta yout nat ta yout or ta team nat ta team connection kg kg ma shi pal lout phit thwar kya tal so tar par. Dar tg lu htwet thwar tar tawe ma par thay bu.
+
+Art tawe har kya taw toe law ka mhar shi tal, akhu lal shi tha loe nout lal shi nay oo mar pal.
+
+Darpay mat nout pine ta choe ka tot change nay kya par pe. Agile paw lar pe htal ka apaw ka phit nay tar tawe ka asin pyay thwar lout loe pal. 
+Dar mat art dar ko lal kg kg tot kine twal naing ya mhar pop. Art de culture change ko lal akon lone par lar mha ya mal.
+
+Nal tot nal par tal but ta choe Company tawe so ayin loe 6 months or 1 year nay mha code ko production poe tar ma hote pal. 1 month or 2 month nay ta khar poe nay kya par pe.	
+
+Operations tawe procedure tawe akone lone ko ta khar tal ma htoe pal agile nee nat phit ng tha mya lout pe Production ko amyan sone poe nay kya pe. Sin sar kyi par kg kyoe tawe amyar gi ya mhar pal
+apaw ka phit nay tar tawe htet sar yin anal sone tot arr lone gyi pee thwar mha poe tar ma hote tat atwet asone ashone nal naing mal.
+
+
+What Is DevOps?
+--------------
+Ok, ayin ka lout nay tot akyoun tot the thwar pe, dar so DevOps ka ba loe lal?
+
+"DevOps is about taking full ownership at every step along the way". Ko or team ka arr lone pe thwar tat ahtee responsibility apyae yuu ya tar par.
+
+Achoe Company tawe mhar DevOps roles tawe thet thet shi lar pe koz ka programmer loe myo pal but build tawe nar lal ya mal deploy code tawe thi ya mal automate testing tawe mar phit naing tha lout 
+nar lal mat lu myo pop.
+
+Achoe Compnay tawe mhar roles tawea ka ayin loe thet thet shi tone pal, developer tawe tester tawe operations tha mar tawe dar mat thu tawe ka akone pone pe DevOps role ko phyae phoe lout nay kya pe.
+Atuu tuu pu pone pe atuu tuu responsibility apyae yuu pe tot pop.
+
+DevOps yat ayay akyi sone ayar ka Software ta khu production ko bal loe akg sone poe ya ma lal so tar tawe pe lout ya mhar pal.
+
+
+What This Means to You
+----------------------
+Takal tot technically aya Software Developer ta yout anay nat min har DevOps yat asate apine ta khu pal.
+Welcome. Congratulations. :)
+
+Ya nay. mar Software Developers tawe har code gyi pal yay nay tar htet ko po pe thee phoe myaw link nay kyar par pe.
+Code mha code pal yay mat lu tawe shi par thay tal (ta khar tal akyan pay pa ya say, art loe ma lout phoe).
+
+So lo tar ka ko har small company mhar pal lout lout sartup company mhar pal lout lout koz yat code ko ta char ta yout yat pya thar nat aphit ma poe thint par bu.
+Ko koe tine ka ko lout ya mat process tawe tools koz ya code ko development ka nay production ko poe tat achain mar loe tat ayar tawe pop.
+Art dar thway ko thay thay char char nar lal ya mal.
+
+Art loe pyee pyae sone phoe atawet ko the ya mat ayar tawe ka.
+
+. source control ko nar lal ya mal koz yat code ko bal loe others nat integrate lout ya ma lal so tar
+. continuous integration tawe server tawe ba lo alout lout lal so tar tawe
+. testing tawe nat automated testing tawe 
+. development process tawe nat configration tawe
+. monitoring tawe performance check tawe
+
+Art tot kyaw taw lant khan par tal art dar tawe ayan myar tat ayar tawe so tar dar pay mal ko ka art dar tawe ko in-depth knowledge thee sayar ma loe bu.
+Anal sone tot achay khan anay nat thee htar ya mal thone tat ya mal guide lout pay naing ya mal. (dar nat nal nal thet sine tat Specialization Vs Generalization topic ko nout akhwint thint yin yay twar pal oo mal)
+
+Out ka example lay nat sin sar kyi par. 
+
+Ko ka football team yat shae tan so par tot. Ko ka ta char position tawe akone lone ko thee sa yar ma loe bu so yin art de position tawe yat adate pal shi tal strategy tawe ko
+dissus lout pe so yin ko har win par naing mhar ma hote bu ta kal loe ko har art de position tawe ta khu nat mha ma lae lar htar bu so yin.
+
+
+
+Conclusion
+----------
+
+DevOps har tool or technique ta khu ma hote par bu. DevOps har ta kal tot cluture change ta khu par. 
+Software development ka nay sa pe delivery poe pee thwar tat ahtee ko yat par win pat that mu culture ko change ya mar par.
+Ta kal tot DevOps har kyal pyant tat topic ta khu phit pee t0hu. ko post ta khu dar mha ma hote information anal ngeel nat kyaw taw toe de software delivery and deployment 
+process tawe culture change ko lone lout ag ma thi naing thay par bu. Nout pine nit tawe mhar lu pyaw myar pe ta choe tawe change nay kyar pe.
+Kyaw daw de mhar ka software developer ta your thi yat mat DevOps ko intro lout thar 
+pyaw chin par. Nout sone akyan pay chin tar ka tot DevOps nat pat that pe sate win sar yin sat pe tot lay lar par. Ko lat shi yout nay tat nay yar nat
+nhaing shin par. Tal kal loe ko ka DevOps yat asate apine ta khu ma hote thay yin, asate pine ta khu phit aung lout par. Ta kal loe asate apine ta khu phit pe
+thar so yin lal, astate apine thay thay lay mhar yat ma nay pal asate apine akyi kyi phit aung lout par loe tite toun chin par tal. 
+
+
+
+Note
+----
+Programming nat pat thet pe slide tawe lal ma yay phit, ma pyaw phit tar lal kyar par pe. 2016 mhar lal programming nat pat thet pe status tg ma tin phit par bu.
+Other tawe pal tin phit tal. 2017 tot de programming post nat sa tin yin kyo say chin loe yay phit thwar tal. ayay athar ma kg loe shi yin pls forgive me :)
+
+So, if you got some motivation or agree with me about this post, plase share. If you already share, please click the like button, let me know that you are there.
+Because I'm happy to know that people are reached my post. Ok, I will talk to you nex time, bie, take care!
