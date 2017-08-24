@@ -83,3 +83,7 @@ https://stackoverflow.com/questions/2606572/junit-splitting-integration-test-and
 https://stackoverflow.com/questions/2388253/separation-of-junit-classes-into-special-test-package
 
 https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
+
+https://stackoverflow.com/questions/39860643/formatting-date-in-thymeleaf
+
+https://stackoverflow.com/questions/17647214/form-values-to-be-null-instead-of-in-spring
