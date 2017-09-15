@@ -87,3 +87,6 @@ https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-v
 https://stackoverflow.com/questions/39860643/formatting-date-in-thymeleaf
 
 https://stackoverflow.com/questions/17647214/form-values-to-be-null-instead-of-in-spring
+
+https://help.disqus.com/customer/portal/articles/1104788-web-integration
+https://devcenter.heroku.com/articles/deploying-java-applications-to-heroku-from-eclipse-or-intellij-idea
